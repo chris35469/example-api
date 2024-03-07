@@ -40,7 +40,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
                     label: `>`,
                 },
                 {
-                    label: `State: ${state?.page % 2}`,
+                    label: `State: ${(state?.page % 2) + 1}`,
                 },
                 /*
                 {
@@ -49,7 +49,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
                 },*/
             ],
             image: {
-                src: `${NEXT_PUBLIC_URL}/w3bbie${state?.page % 2 || 1}.jpg`,
+                src: `${NEXT_PUBLIC_URL}/w3bbie${(state?.page % 2) + 1}.jpg`,
             },
             postUrl: `${API_URL}/api/frame`,
             state: {
