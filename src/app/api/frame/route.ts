@@ -39,6 +39,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
                 {
                     label: `👁️`,
                 },
+                {
+                    action: 'link',
+                    label: 'w3bbie.xyz',
+                    target: 'https://w3bbie.xyz',
+                }
                 /*
                 {
                   action: 'post_redirect',
