@@ -37,10 +37,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         getFrameHtmlResponse({
             buttons: [
                 {
-                    label: `>`,
-                },
-                {
-                    label: `State: ${(state?.page % 2) + 1}`,
+                    label: `👁️`,
                 },
                 /*
                 {
